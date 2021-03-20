@@ -1,0 +1,422 @@
+<head>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://francomoyano.ca/wp-content/themes/Divi/webfonts/ScenePro.css" />
+
+  <!---BEGINING OF CSS --->
+  <style>
+    /* BORDER OF EACH SLIDE */
+    .border {
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      height: 28.54vw;
+      width: 32.86vw;
+      background: transparent;
+      transition: border 1s;
+      position: relative;
+      border: 0.42vw solid transparent;
+    }
+
+    .border:hover {
+      border: 0.42vw solid #d4af43;
+    }
+
+    /* DEFAULT SIZE FOR SLIDES */
+    .card {
+      height: 28.54vw;
+      width: 32.86vw;
+      overflow: hidden;
+      margin: 0vw;
+      object.style.textTransform="uppercase";
+    }
+
+    /* IMAGE 1 */
+    .card1 {
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.65)),
+        url("/wp-content/uploads/2021/03/1.jpg") center no-repeat;
+      background-size: 170%;
+    }
+
+    .card1:hover .homeinfo1 {
+      opacity: 1;
+    }
+
+    .card1:hover .homeinfo4 {
+      opacity: 1;
+    }
+
+    .card1:hover .homeinfo5 {
+      opacity: 1;
+    }
+
+    .card1:hover .fa {
+      opacity: 1;
+    }
+
+    .card1:hover .moving-text {
+      margin-top: -2.7vw;
+    }
+
+    /* IMAGE 2 */
+    .card2 {
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.65)),
+        url("/wp-content/uploads/2021/03/7.jpg") center no-repeat;
+      background-size: 131%;
+    }
+
+    .card2:hover .homeinfo1 {
+      opacity: 1;
+    }
+
+    .card2:hover .homeinfo4 {
+      opacity: 1;
+    }
+
+    .card2:hover .homeinfo5 {
+      opacity: 1;
+    }
+
+    .card2:hover .fa {
+      opacity: 1;
+    }
+
+    .card2:hover .moving-text {
+      margin-top: -2.7vw;
+    }
+
+    /* IMAGE 3 */
+    .card3 {
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.65)),
+        url("/wp-content/uploads/2021/03/9.jpg") center no-repeat;
+      background-size: 140%;
+    }
+
+    .card3:hover .homeinfo1 {
+      opacity: 1;
+    }
+
+    .card3:hover .homeinfo4 {
+      opacity: 1;
+    }
+
+    .card3:hover .homeinfo5 {
+      opacity: 1;
+    }
+
+    .card3:hover .fa {
+      opacity: 1;
+    }
+
+    .card3:hover .moving-text {
+      margin-top: -2.7vw;
+    }
+
+    /* IMAGE 4 */
+    .card4 {
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.65)),
+        url("/wp-content/uploads/2021/03/10.jpg") center no-repeat;
+      background-size: 170%;
+    }
+
+    .card4:hover .homeinfo1 {
+      opacity: 1;
+    }
+
+    .card4:hover .homeinfo4 {
+      opacity: 1;
+    }
+
+    .card4:hover .homeinfo5 {
+      opacity: 1;
+    }
+
+    .card4:hover .fa {
+      opacity: 1;
+    }
+
+    .card4:hover .moving-text {
+      margin-top: -2.7vw;
+    }
+
+    /* IMAGE 5 */
+    .card5 {
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.65)),
+        url("/wp-content/uploads/2021/03/11.jpg") center no-repeat;
+      background-size: 170%;
+    }
+
+    .card5:hover .homeinfo1 {
+      opacity: 1;
+    }
+
+    .card5:hover .homeinfo4 {
+      opacity: 1;
+    }
+
+    .card5:hover .homeinfo5 {
+      opacity: 1;
+    }
+
+    .card5:hover .fa {
+      opacity: 1;
+    }
+
+    .card5:hover .moving-text {
+      margin-top: -2.7vw;
+    }
+
+    /* IMAGE 6 */
+    .card6 {
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.65)),
+        url("/wp-content/uploads/2021/03/2.jpg") center no-repeat;
+      background-size: 170%;
+    }
+
+    .card6:hover .homeinfo1 {
+      opacity: 1;
+    }
+
+    .card6:hover .homeinfo4 {
+      opacity: 1;
+    }
+
+    .card6:hover .homeinfo5 {
+      opacity: 1;
+    }
+
+    .card6:hover .fa {
+      opacity: 1;
+    }
+
+    .card6:hover .moving-text {
+      margin-top: -2.7vw;
+    }
+
+    /* FONTS/TEXT */
+    .homeinfo1 {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 1.7vw;
+      color: #fff;
+      margin-top: 1.93vw;
+      margin-left: 2.45vw;
+      opacity: 0;
+      transition: opacity 0.7s;
+      text-transform: uppercase;
+    }
+
+    .homeinfo2 {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 1.7vw;
+      color: #fff;
+      margin-top: 17.8vw;
+      margin-left: 2.45vw;
+      opacity: 1;
+      transition: opacity 0.7s;
+      text-transform: uppercase;
+    }
+
+    .homeinfo3 {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 1vw;
+      color: #fff;
+      margin-top: -1vw;
+      margin-left: 2.45vw;
+      opacity: 1;
+      transition: opacity 0.7s;
+      text-transform: uppercase;
+    }
+
+    .homeinfo4 {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 1vw;
+      color: #fff;
+      margin-top: -0.52vw;
+      margin-left: 2.45vw;
+      opacity: 0;
+      transition: opacity 0.7s;
+      text-transform: uppercase;
+    }
+
+    .homeinfo5 {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 2.7vw;
+      color: #d4af43;
+      margin-top: -1.2vw;
+      margin-left: 2.45vw;
+      opacity: 0;
+      transition: opacity 0.7s;
+      text-transform: uppercase;
+    }
+
+    /* BUTTONS */
+    .fa {
+      opacity: 0;
+      transition: opacity 0.7s;
+    }
+
+    .button {
+      position: absolute;
+      fill: #fff;
+      color: #fff;
+      height: 130px;
+      top: 226px;
+      width: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    /* FONT CHARACTERISTICS */
+    .moving-text {
+      height: 28.54vw;
+      width: 32.86vw;
+      background: transparent;
+      transition: margin-top 0.5s;
+      position: relative;
+    }
+  </style>
+</head>
+<!---END OF CSS --->
+
+<body>
+  <!-- Slider main container -->
+  <div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+
+      <!---SLIDE 1 --->
+      <div class="swiper-slide">
+        <div class="card card1">
+          <div class="border">
+            <h1 class="homeinfo1">SOLD | BARRIE</h1>
+            <div class="moving-text">
+              <h2 class="homeinfo2">26 BROOKFIELD CRES</h2>
+              <h3 class="homeinfo3">BARRIE</h3>
+              <h4 class="homeinfo4">3 BD | 3 BA | 1,500 - 2000 SQFT</h4>
+              <h5 class="homeinfo5">$951,000</h5>
+            </div>
+            <div class="button">
+              <i class="fa fa-codepen" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!---SLIDE 2 --->
+      <div class="swiper-slide">
+        <div class="card card2">
+          <div class="border">
+            <h1 class="homeinfo1">SOLD | BARRIE</h1>
+            <div class="moving-text">
+              <h2 class="homeinfo2">1926 WEBSTER BLVD</h2>
+              <h3 class="homeinfo3">INNISFIL</h3>
+              <h4 class="homeinfo4">4 BD | 4 BA | 2,700 SQFT</h4>
+              <h5 class="homeinfo5">$888,000</h5>
+            </div>
+            <div class="button">
+              <i class="fa fa-codepen" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!---SLIDE 3 --->
+      <div class="swiper-slide">
+        <div class="card card3">
+          <div class="border">
+            <h1 class="homeinfo1">SOLD | BARRIE</h1>
+            <div class="moving-text">
+              <h2 class="homeinfo2">12 GABLES WAY</h2>
+              <h3 class="homeinfo3">BARRIE</h3>
+              <h4 class="homeinfo4">4 BD | 3 BA | 1,600 SQFT</h4>
+              <h5 class="homeinfo5">$895,000</h5>
+            </div>
+            <div class="button">
+              <i class="fa fa-codepen" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+
+        <!---SLIDE 4 --->
+        <div class="card card4">
+          <div class="border">
+            <h1 class="homeinfo1">SOLD | BARRIE</h1>
+            <div class="moving-text">
+              <h2 class="homeinfo2">137 FERNDALE DR S</h2>
+              <h3 class="homeinfo3">BARRIE</h3>
+              <h4 class="homeinfo4">6 BD | 4 BA | 4,293 SQFT</h4>
+              <h5 class="homeinfo5">$890,000</h5>
+            </div>
+            <div class="button">
+              <i class="fa fa-codepen" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+
+        <!---SLIDE 5 --->
+        <div class="card card5">
+          <div class="border">
+            <h1 class="homeinfo1">SOLD | BARRIE</h1>
+            <div class="moving-text">
+              <h2 class="homeinfo2">97 MUIRFIELD DR</h2>
+              <h3 class="homeinfo3">BARRIE</h3>
+              <h4 class="homeinfo4">5 BD | 4 BA | 3,247 SQFT</h4>
+              <h5 class="homeinfo5">$915,000</h5>
+            </div>
+            <div class="button">
+              <i class="fa fa-codepen" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+
+        <!---SLIDE 6 --->
+        <div class="card card6">
+          <div class="border">
+            <h1 class="homeinfo1">SOLD | BARRIE</h1>
+            <div class="moving-text">
+              <h2 class="homeinfo2">57 KIERLAND RD</h2>
+              <h3 class="homeinfo3">BARRIE</h3>
+              <h4 class="homeinfo4">5 BD | 4 BA | 3,230 SQFT</h4>
+              <h5 class="homeinfo5">$985,000</h5>
+            </div>
+            <div class="button">
+              <i class="fa fa-codepen" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--- SWIPERJS SOURCE --->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/2.7.6/idangerous.swiper.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <!---SLIDER CODE --->
+  <script>
+    var mySwiper = new Swiper(".swiper-container", {
+      // Optional parameters
+      slidesPerView: 3,
+      loop: true,
+      direction: "horizontal",
+      //AutoPlay Settings
+      autoplay: 1700,
+      // Navigation arrows
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      }
+    });
+    //Stop and Start Autoplay Settings
+    $(".swiper-container").on("mouseenter", function(e) {
+      console.log("stop autoplay");
+      mySwiper.stopAutoplay();
+    });
+    $(".swiper-container").on("mouseleave", function(e) {
+      console.log("start autoplay");
+      mySwiper.startAutoplay();
+    });
+  </script>
